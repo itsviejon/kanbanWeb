@@ -12,25 +12,27 @@
         <q-toolbar-title>
           Tablero Kanban
         </q-toolbar-title>
-        <div class="row">
-        <h5>Proyecto: </h5>
-        <q-input v-model="text" :dense="dense" disable class="menu" />
-        </div>
-        <div class="row">
-        <h5>Fecha Estatus: </h5>
-        <q-input v-model="text" :dense="dense" disable class="menu"/>
-        </div>
-        <div class="row">
-        <h5>Product Owner: </h5>
-        <q-input v-model="text" :dense="dense" disable class="menu"/>
-        </div>
-        <div class="row">
-        <h5>Scrum Master: </h5>
-        <q-input v-model="text" :dense="dense" disable class="menu"/>
-        </div>
-        <div class="row">
-        <h5>Estatus: </h5>
-        <q-input v-model="text" :dense="dense" disable class="menu"/>
+        <div class="row menuText">
+          <div class="row">
+            <h5>Proyecto: </h5>
+            <q-input v-model="text" :dense="dense" disable class="menu" />
+          </div>
+          <div class="row">
+            <h5>Fecha Estatus: </h5>
+            <q-input v-model="text" :dense="dense" disable class="menu"/>
+          </div>
+          <div class="row">
+            <h5>Product Owner: </h5>
+            <q-input v-model="text" :dense="dense" disable class="menu"/>
+          </div>
+          <div class="row">
+            <h5>Scrum Master: </h5>
+            <q-input v-model="text" :dense="dense" disable class="menu"/>
+          </div>
+          <div class="row">
+            <h5>Estatus: </h5>
+            <q-input v-model="text" :dense="dense" disable class="menu"/>
+          </div>
         </div>
       </q-toolbar>
     </q-header>
