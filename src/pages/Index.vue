@@ -1,12 +1,18 @@
 <template>
   <q-page class="">
-    <div class="row">
-      <div class="col-md-12">
+    <div class="qa-pa-md tabla">
+      <div class="row">
+      <div class="col-md-6 offset-md-3">
          <q-table
+         card-class="bg-cyan-1 text-black"
+         color="primary"
          :data='rows'
           title="Tablero KANBAN"
           row-key="name"
+          class="table"
+          hide-bottom
           />
+      </div>
       </div>
     </div>
   </q-page>
@@ -23,8 +29,8 @@ export default {
       rows: [
         {
           name: 'SIAN',
-          prioridad: 'Alta',
-          estatus: 'Alta',
+          prioridad: '',
+          estatus: '',
           fechaEstatus: today.toLocaleDateString(),
           development: 'Diego Calderón'
         }
