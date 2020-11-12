@@ -2,7 +2,7 @@
   <q-page class="">
     <div class="qa-pa-md tabla">
       <div class="row">
-      <div class="col-md-6 offset-md-3">
+      <div class="col-md-8 offset-md-3">
          <q-table
          card-class="bg-cyan-1 text-black"
          color="primary"
