@@ -5,9 +5,21 @@
 
 .table{
     border-radius: 15px;
+    
 }
 
 h5{
     font-size: medium;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
+.menu label{
+    align-items: center;
+    color: white;
+    font-size: medium;
+}
+
+hr{
+    flex-direction: row;
+}

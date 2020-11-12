@@ -2,17 +2,17 @@
   <q-page class="">
     <div class="qa-pa-md tabla">
       <div class="row">
-      <div class="col-md-8 offset-md-3">
-         <q-table
-         card-class="bg-cyan-1 text-black"
-         color="primary"
-         :data='rows'
-          title="Tablero KANBAN"
-          row-key="name"
-          class="table"
-          hide-bottom
-          />
-      </div>
+        <div class="col-md-8 offset-md-3">
+          <q-table
+          card-class="bg-cyan-1 text-black"
+          color="primary"
+          :data='rows'
+            title="Tablero KANBAN"
+            row-key="name"
+            class="table"
+            hide-bottom
+            />
+        </div>
       </div>
     </div>
   </q-page>
@@ -28,10 +28,10 @@ export default {
     return {
       rows: [
         {
-          name: 'SIAN',
+          nombre: 'SIAN',
           prioridad: '',
           estatus: '',
-          fechaEstatus: today.toLocaleDateString(),
+          FechaEstatus: today.toLocaleDateString(),
           development: 'Diego Calderón'
         }
       ]
