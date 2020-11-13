@@ -11,6 +11,8 @@
     margin-left: 10%;
     
 }
+.menuText{
+}
 
 .barraCabecera{
     color: white;
@@ -86,4 +88,33 @@ hr{
   p{
     margin-top: 10px;
     margin-bottom: 0px;
+  }
+  .circuloRojo{
+    width:30px;
+    height: 30px;
+    border-width: thin;
+    border-radius: 30px;
+    background-color: #cc1d1d;
+  }
+  .circuloAmarillo{
+    width:30px;
+    height:30px;
+    border-width: thin;
+    border-radius: 30px;
+    background-color:#f2df11;
+  }
+  .circuloVerde{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    border-width: thin;
+    background-color: #17b024;
+  }
+  .circuloBlanco{
+    border-color: #009879;
+    width:30px;
+    height: 30px;
+    border-width: thin;
+    border-radius: 30px;
+    background-color:white;
   }

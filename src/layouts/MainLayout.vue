@@ -12,29 +12,29 @@
         <q-toolbar-title class="titulo">
           Tablero Kanban
         </q-toolbar-title>
-        <div class="row menuText">
-          <div class="row">
+      </q-toolbar>
+      <div class="row menuText" style="padding-left:15%">
+          <div class="col-md-2">
             <h5>Proyecto:</h5>
-            <q-input filled  dense="dense" disable class="menu" label="SIAN" label-color="black" />
+            <q-input filled  dense="dense" disable class="menu" label="SIAN" label-color="black"/>
           </div>
-          <div class="row">
+          <div class="col-md-2">
             <h5>Fecha Estatus: </h5>
-            <q-input filled  dense="dense" disable class="menu"/>
+            <q-input filled  dense="dense" disable class="menu" label="Fecha Status" label-color="black"/>
           </div>
-          <div class="row">
+          <div class="col-md-2">
             <h5>Product Owner: </h5>
-            <q-input filled  dense="dense" disable class="menu"/>
+            <q-input filled  dense="dense" disable class="menu" label="Product Owner" label-color="black"/>
           </div>
-          <div class="row">
+          <div  class="col-md-2">
             <h5>Scrum Master: </h5>
-            <q-input filled dense="dense" disable class="menu"/>
+            <q-input filled dense="dense" disable class="menu" label="Scrum master" label-color="black"/>
           </div>
-          <div class="row">
-            <h5>Estatus: </h5>
-            <q-input filled dense="dense" disable class="menu"/>
+          <div  class="col-md-3">
+            <h5>Status: </h5>
+            <q-input filled dense="dense" disable class="Status" label="En proceso" label-color="black"/>
           </div>
         </div>
-      </q-toolbar>
     </q-header>
     <q-drawer
       v-model="leftDrawerOpen"

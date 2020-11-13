@@ -17,23 +17,23 @@
         <tbody>
           <tr>
             <td>SIAN</td>
-            <td></td>
-            <td></td>
             <td>10/15/2020</td>
+            <td><button class="circuloRojo"></button></td>
+            <td><button class="circuloVerde"></button></td>
             <td>Fernando Arteaga</td>
           </tr>
            <tr>
             <td>SACEC</td>
-            <td></td>
-            <td></td>
             <td>08/05/2020</td>
+            <td><button class="circuloRojo"></button></td>
+            <td><button class="circuloAmarillo"></button></td>
             <td>José López</td>
           </tr>
            <tr>
             <td>EBIND</td>
-            <td></td>
-            <td></td>
             <td>10/27/2020</td>
+            <td><button class="circuloAmarillo"></button></td>
+            <td><button class="circuloBlanco"></button></td>
             <td>Pedro Fuentes</td>
           </tr>
         </tbody>
