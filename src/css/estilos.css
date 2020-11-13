@@ -48,6 +48,7 @@ hr{
 }
 
 .content-table {
+    text-align: center;
     width: 100%;
     border-collapse: collapse;
     margin: 25px 0;
@@ -61,7 +62,7 @@ hr{
   .content-table thead tr {
     background-color: #009879;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
   }
   
@@ -80,4 +81,9 @@ hr{
   
   .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
+  }
+
+  p{
+    margin-top: 10px;
+    margin-bottom: 0px;
   }

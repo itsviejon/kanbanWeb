@@ -19,21 +19,21 @@
             <td>SIAN</td>
             <td></td>
             <td></td>
-            <td id="fecha"></td>
+            <td>10/15/2020</td>
             <td>Fernando Arteaga</td>
           </tr>
            <tr>
             <td>SACEC</td>
             <td></td>
             <td></td>
-            <td id="fecha2"></td>
+            <td>08/05/2020</td>
             <td>José López</td>
           </tr>
            <tr>
             <td>EBIND</td>
             <td></td>
             <td></td>
-            <td id="fecha3"></td>
+            <td>10/27/2020</td>
             <td>Pedro Fuentes</td>
           </tr>
         </tbody>
@@ -45,14 +45,6 @@
 /* var puntoRojo = new Image()
 puntoRojo.src = 'https://pbs.twimg.com/profile_images/3128936914/4c326de0f1b551ffce5c85487cf473c3.jpeg' */
 import '../css/estilos.css'
-
-window.onload = function () {
-  const timeElapsed = Date.now()
-  const today = new Date(timeElapsed).toLocaleDateString()
-  document.getElementById('fecha').innerHTML = today
-  document.getElementById('fecha2').innerHTML = today
-  document.getElementById('fecha3').innerHTML = today
-}
 
 export default {
   name: 'Index'
