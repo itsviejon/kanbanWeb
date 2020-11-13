@@ -2,10 +2,27 @@
     margin-top: 5%;
     margin-right:10%;
 }
+.titulo{
+}
 
 .table{
     border-radius: 15px;
     
+}
+.barraCabecera{
+    color: white;
+    background-color: rgb(3, 3, 95);
+    text-align: center;
+    margin-top: 0%;
+}
+.menu-list{
+    color: white;
+    background-color: green;
+    height: 100%;
+}
+
+.barraMenuIzquierda{
+    background-color: green;
 }
 
 h5{
