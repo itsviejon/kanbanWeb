@@ -14,24 +14,24 @@
         </q-toolbar-title>
         <div class="row menuText">
           <div class="row">
-            <h5>Proyecto: </h5>
-            <q-input v-model="text" :dense="dense" disable class="menu" />
+            <h5>Proyecto:</h5>
+            <q-input filled  dense="dense" disable class="menu" label="SIAN" label-color="black" />
           </div>
           <div class="row">
             <h5>Fecha Estatus: </h5>
-            <q-input v-model="text" :dense="dense" disable class="menu"/>
+            <q-input filled  dense="dense" disable class="menu"/>
           </div>
           <div class="row">
             <h5>Product Owner: </h5>
-            <q-input v-model="text" :dense="dense" disable class="menu"/>
+            <q-input filled  dense="dense" disable class="menu"/>
           </div>
           <div class="row">
             <h5>Scrum Master: </h5>
-            <q-input v-model="text" :dense="dense" disable class="menu"/>
+            <q-input filled dense="dense" disable class="menu"/>
           </div>
           <div class="row">
             <h5>Estatus: </h5>
-            <q-input v-model="text" :dense="dense" disable class="menu"/>
+            <q-input filled dense="dense" disable class="menu"/>
           </div>
         </div>
       </q-toolbar>
@@ -52,7 +52,8 @@
             Tablero Kanban
           </q-item-section>
         </q-item>
-        <q-item clickable v-ripple>
+
+        <q-item clickable v-ripple to="/proyecto">
           <q-item-section avatar>
             <q-icon name="event_available" />
           </q-item-section>
@@ -61,6 +62,8 @@
           </q-item-section>
         </q-item>
         <q-item clickable v-ripple>
+
+        <q-item clickable v-ripple to="/productBacklog">
           <q-item-section avatar>
             <q-icon name="list_alt" />
           </q-item-section>
@@ -76,7 +79,7 @@
             Scrum Team
           </q-item-section>
         </q-item>
-        <q-item clickable v-ripple>
+        <q-item clickable v-ripple to="/informes">
           <q-item-section avatar>
             <q-icon name="poll" />
           </q-item-section>
