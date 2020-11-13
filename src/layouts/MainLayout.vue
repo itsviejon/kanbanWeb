@@ -45,15 +45,14 @@
     >
     <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
       <q-list padding class="menu-list">
-        <q-item clickable to="/" v-ripple>
+        <q-i-tem clickable to="/" v-ripple>
           <q-item-section avatar>
             <q-icon name="table_view" />
           </q-item-section>
-
           <q-item-section>
             Tablero Kanban
           </q-item-section>
-        </q-item>
+        </q-i-tem>
 
         <q-item clickable v-ripple to="/proyecto">
           <q-item-section avatar>
