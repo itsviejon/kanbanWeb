@@ -81,3 +81,28 @@ hr{
   .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
   }
+
+  .circuloRojo{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:red;
+  }
+  .circuloAmarillo{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:yellow;
+  }
+  .circuloVerde{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:green;
+  }
+  .circuloBlanco{
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color:white;
+  }

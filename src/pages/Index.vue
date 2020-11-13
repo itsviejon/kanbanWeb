@@ -17,22 +17,22 @@
         <tbody>
           <tr>
             <td>SIAN</td>
-            <td></td>
-            <td></td>
+            <td><button class="circuloRojo"></button></td>
+            <td><button class="circuloVerde"></button></td>
             <td id="fecha"></td>
             <td>Fernando Arteaga</td>
           </tr>
            <tr>
             <td>SACEC</td>
-            <td></td>
-            <td></td>
+            <td><button class="circuloRojo"></button></td>
+            <td><button class="circuloAmarillo"></button></td>
             <td id="fecha2"></td>
             <td>José López</td>
           </tr>
            <tr>
             <td>EBIND</td>
-            <td></td>
-            <td></td>
+            <td><button class="circuloAmarillo"></button></td>
+            <td><button class="circuloBlanco"></button></td>
             <td id="fecha3"></td>
             <td>Pedro Fuentes</td>
           </tr>
