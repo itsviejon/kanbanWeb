@@ -42,17 +42,16 @@
       bordered
       content-class="bg-grey-1"
     >
-    <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd" class="barraMenuIzquierda">
+    <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd" >
       <q-list padding class="menu-list">
-        <q-i-tem clickable to="/" v-ripple>
+        <q-item clickable to="/" v-ripple>
           <q-item-section avatar>
             <q-icon name="table_view" />
           </q-item-section>
           <q-item-section>
             Tablero Kanban
           </q-item-section>
-        </q-i-tem>
-
+        </q-item>
         <q-item clickable v-ripple to="/proyecto">
           <q-item-section avatar>
             <q-icon name="event_available" />
@@ -61,8 +60,6 @@
             Proyecto
           </q-item-section>
         </q-item>
-        <q-item clickable v-ripple>
-
         <q-item clickable v-ripple to="/productBacklog">
           <q-item-section avatar>
             <q-icon name="list_alt" />

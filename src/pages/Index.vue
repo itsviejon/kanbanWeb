@@ -1,53 +1,60 @@
 <template>
   <q-page class="">
-    <div class="barraCabecera">
-      <h4>TABLERO KANVAN</h4>
+    <div class="titulo">
+      <h3>Tablero Kanban</h3>
     </div>
-    <div class="qa-pa-md tabla">
-      <div class="row">
-      <div class="col-md-8 offset-md-3">
-         <q-table
-         card-class="bg-cyan-1 text-black"
-         color="primary"
-         :data='rows'
-          title="Tablero KANBAN"
-          row-key="name"
-          class="table"
-          hide-bottom
-          />
-      </div>
-    <q-circular-progress
-      indeterminate
-      size="45px"
-      :thickness="1"
-      color="black-8"
-      track-color="red"
-      class="q-ma-md"
-    />
-      </div>
+    <div class="tabla">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Prioridad</th>
+            <th>Estatus</th>
+            <th>Fecha Estatus</th>
+            <th>Development</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SIAN</td>
+            <td></td>
+            <td></td>
+            <td id="fecha"></td>
+            <td>Fernando Arteaga</td>
+          </tr>
+           <tr>
+            <td>SACEC</td>
+            <td></td>
+            <td></td>
+            <td id="fecha2"></td>
+            <td>José López</td>
+          </tr>
+           <tr>
+            <td>EBIND</td>
+            <td></td>
+            <td></td>
+            <td id="fecha3"></td>
+            <td>Pedro Fuentes</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </q-page>
 </template>
 <script>
-var timeElapsed = Date.now()
-var today = new Date(timeElapsed)
-var puntoRojo = new Image()
-puntoRojo.src = 'https://pbs.twimg.com/profile_images/3128936914/4c326de0f1b551ffce5c85487cf473c3.jpeg'
+/* var puntoRojo = new Image()
+puntoRojo.src = 'https://pbs.twimg.com/profile_images/3128936914/4c326de0f1b551ffce5c85487cf473c3.jpeg' */
 import '../css/estilos.css'
+
+window.onload = function () {
+  const timeElapsed = Date.now()
+  const today = new Date(timeElapsed).toLocaleDateString()
+  document.getElementById('fecha').innerHTML = today
+  document.getElementById('fecha2').innerHTML = today
+  document.getElementById('fecha3').innerHTML = today
+}
+
 export default {
-  name: 'Index',
-  data () {
-    return {
-      rows: [
-        {
-          name: 'SIAN',
-          prioridad: '',
-          estatus: '',
-          fechaEstatus: today.toLocaleDateString(),
-          development: 'Diego Calderón'
-        }
-      ]
-    }
-  }
+  name: 'Index'
 }
 </script>

@@ -1,7 +1,8 @@
 <template>
-  <q-page class="q-pa-md">
-    <h4>ESTA ES LA PAGINA SCRUM TEAM</h4>
-  </q-page>
+  <div class="q-pa-md" style="margin-left:25%; margin-right:25%; margin-top:5%">
+    <form action="">
+    </form>
+  </div>
 </template>
 
 <script>
