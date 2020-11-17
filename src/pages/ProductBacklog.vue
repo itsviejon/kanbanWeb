@@ -1,8 +1,7 @@
 <template>
   <q-page class="">
     <div class="titulo">
-      <h3>Product Backlog</h3>
-          <q-btn class="botonApp" glossy label="Agregar funcionalidad" icon="list_alt"  />
+      <h4>Product Backlog</h4>
     </div>
     <div class="tabla">
       <table class="content-table">
@@ -35,6 +34,7 @@
           </tr>
         </tbody>
       </table>
+      <q-btn class="botonApp2 float-right" glossy label="Agregar funcionalidad" icon="add_task"/>
     </div>
   </q-page>
 </template>

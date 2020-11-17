@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="barraCabecera">
       <q-toolbar>
         <q-btn
           flat
@@ -20,7 +20,7 @@
           </div>
           <div class="col-md-2">
             <h5>Fecha Estatus: </h5>
-            <q-input filled  dense="dense"  label="Fecha Status" label-color="green"/>
+            <q-input  filled  dense="dense"  label="Fecha Status" label-color="green"/>
           </div>
           <div class="col-md-2">
             <h5>Product Owner: </h5>
@@ -32,7 +32,7 @@
           </div>
           <div  class="col-md-3 textos" >
             <h5>Status: </h5>
-            <q-input filled dense="dense"  label="En proceso" label-color="green"/>
+            <q-input class="float-left" filled dense="dense"  label="En proceso" label-color="green"/>
           </div>
         </div>
     </q-header>

@@ -24,10 +24,10 @@
           </tr>
         </tbody>
       </table>
+        <a href="#/formScrum">
+          <q-btn class="botonApp float-right" glossy label="Agregar" icon="person_add"  />
+        </a>
     </div>
-    <a href="#/formScrum">
-        <q-btn class="botonApp" glossy label="Agregar" icon="people"  />
-    </a>
   </div>
 </template>
 

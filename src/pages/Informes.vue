@@ -2,7 +2,7 @@
     <q-page>
         <div class="informeProyectos">
             <div class="titulo">
-                <h3>Informes Proyectos</h3>
+                <h4>Informes Proyectos</h4>
             </div>
             <div class="tabla">
                 <table class="content-table">
@@ -51,7 +51,7 @@
         </div>
         <div class="informeKanban">
             <div class="titulo">
-                <h3>Informe Tablero Kanban</h3>
+                <h4>Informe Tablero Kanban</h4>
             </div>
             <div class="tabla">
                 <table class="content-table">

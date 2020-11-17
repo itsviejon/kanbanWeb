@@ -1,7 +1,7 @@
 <template>
   <q-page class="">
     <div class="titulo">
-      <h3>Tablero Kanban</h3>
+      <h4>Tablero Kanban</h4>
     </div>
     <div class="tabla">
       <table class="content-table">
