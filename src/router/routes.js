@@ -15,6 +15,13 @@ const routes = [
     ]
   },
   {
+    path: '/formScrum',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/FormScrumTeam.vue') }
+    ]
+  },
+  {
     path: '/proyecto',
     component: () => import('layouts/MainLayout.vue'),
     children: [
