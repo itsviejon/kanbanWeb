@@ -16,23 +16,23 @@
       <div class="row menuText" style="padding-left:15%">
           <div class="col-md-2">
             <h5>Proyecto:</h5>
-            <q-input filled  dense="dense" disable class="menu" label="SIAN" label-color="black"/>
+            <q-input filled  dense="dense"  label="SIAN" label-color="green"/>
           </div>
           <div class="col-md-2">
             <h5>Fecha Estatus: </h5>
-            <q-input filled  dense="dense" disable class="menu" label="Fecha Status" label-color="black"/>
+            <q-input filled  dense="dense"  label="Fecha Status" label-color="green"/>
           </div>
           <div class="col-md-2">
             <h5>Product Owner: </h5>
-            <q-input filled  dense="dense" disable class="menu" label="Product Owner" label-color="black"/>
+            <q-input filled  dense="dense"  label="Product Owner" label-color="green"/>
           </div>
           <div  class="col-md-2">
             <h5>Scrum Master: </h5>
-            <q-input filled dense="dense" disable class="menu" label="Scrum master" label-color="black"/>
+            <q-input filled dense="dense"  label="Scrum master" label-color="green"/>
           </div>
-          <div  class="col-md-3">
+          <div  class="col-md-3 textos" >
             <h5>Status: </h5>
-            <q-input filled dense="dense" disable class="Status" label="En proceso" label-color="black"/>
+            <q-input filled dense="dense"  label="En proceso" label-color="green"/>
           </div>
         </div>
     </q-header>
@@ -42,7 +42,7 @@
       bordered
       content-class="bg-grey-1"
     >
-    <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd" >
+    <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd " >
       <q-list padding class="menu-list">
         <q-item clickable to="/" v-ripple>
           <q-item-section avatar>
