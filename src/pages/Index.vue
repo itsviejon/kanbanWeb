@@ -7,34 +7,34 @@
       <table class="content-table">
         <thead>
           <tr>
-            <th>Nombre</th>
+            <th>#</th>
+            <th>Funcionalidad</th>
             <th>Prioridad</th>
             <th>Estatus</th>
             <th>Fecha Estatus</th>
-            <th>Development</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>SIAN</td>
-            <td>10/15/2020</td>
+            <td>1</td>
+            <td>Funcionalidad</td>
             <td><button class="circuloRojo"></button></td>
             <td><button class="circuloVerde"></button></td>
-            <td>Fernando Arteaga</td>
+            <td>10/15/2020</td>
           </tr>
            <tr>
-            <td>SACEC</td>
-            <td>08/05/2020</td>
+            <td>2</td>
+            <td>Funcionalidad</td>
             <td><button class="circuloRojo"></button></td>
             <td><button class="circuloAmarillo"></button></td>
-            <td>José López</td>
+            <td>08/05/2020</td>
           </tr>
            <tr>
-            <td>EBIND</td>
-            <td>10/27/2020</td>
+            <td>3</td>
+            <td>Funcionalidad</td>
             <td><button class="circuloAmarillo"></button></td>
             <td><button class="circuloBlanco"></button></td>
-            <td>Pedro Fuentes</td>
+            <td>10/27/2020</td>
           </tr>
         </tbody>
       </table>

@@ -8,19 +8,21 @@
         <thead>
           <tr>
             <th>#</th>
-            <th>NAA</th>
             <th>Clave</th>
+            <th>Nombre</th>
             <th>Primer Apellido</th>
             <th>Segundo Apellido</th>
+            <th>Product owner</th>
           </tr>
         </thead>
         <tbody>
            <tr>
-            <td>1</td>
-            <td>Fernando</td>
-            <td>Arteaga</td>
-            <td>Cortez</td>
-            <td>Rol</td>
+            <td>numero</td>
+            <td>Clave</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Apellido</td>
+                        <td>Ownner</td>
           </tr>
         </tbody>
       </table>

@@ -17,8 +17,8 @@
         <tbody>
            <tr>
             <td>Numero</td>
-            <td>Nombre</td>
             <td>Clave</td>
+            <td>Nombre</td>
             <td>Fecha Inicio</td>
             <td>Fecha Fin</td>
           </tr>

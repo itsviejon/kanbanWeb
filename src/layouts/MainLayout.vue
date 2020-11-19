@@ -1,19 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="barraCabecera">
-      <q-toolbar>
-        <q-btn
+      <div class="row menuText" style="">
+          <q-btn
           flat
           dense
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
+          style="margin-right:1rem"
         />
-        <q-toolbar-title class="titulo">
-          Tablero Kanban
-        </q-toolbar-title>
-      </q-toolbar>
-      <div class="row menuText" style="padding-left:15%">
           <div class="col-md-2">
             <h5>Proyecto:</h5>
             <q-input filled  dense="dense"  label="SIAN" label-color="green"/>

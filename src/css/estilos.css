@@ -118,7 +118,7 @@ hr{
   
   .barraRojo{
     box-shadow: 5px 5px 5px #888888;
-    width:12vh;
+    width:10rem;
     height: 30px;
     border-width: thin;
     border-radius: 5px;
@@ -126,7 +126,7 @@ hr{
   }
   .barraAmarillo{
     box-shadow: 5px 5px 5px #888888;
-    width:12vh;
+    width:10rem;
     height:30px;
     border-width: thin;
     border-radius: 5px;
@@ -134,7 +134,7 @@ hr{
   }
   .barraVerde{
     box-shadow: 5px 5px 5px #888888;
-    width:12vh;
+    width:10rem;
     height: 30px;
     border-radius: 5px;
     border-width: thin;
@@ -142,7 +142,7 @@ hr{
   }
   .barraBlanco{
     box-shadow: 5px 5px 5px #888888;
-    width:12vh;
+    width:10rem;
     height: 30px;
     border-width: thin;
     border-radius: 5px;
