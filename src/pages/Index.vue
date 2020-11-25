@@ -1,8 +1,5 @@
 <template>
   <q-page class="">
-    <div class="titulo">
-      <h4>Tablero Kanban</h4>
-    </div>
     <div class="tabla">
       <table class="content-table">
         <thead>

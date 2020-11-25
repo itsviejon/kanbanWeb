@@ -1,36 +1,18 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="barraCabecera">
-      <div class="row menuText" style="">
-          <q-btn
+      <q-toolbar>
+        <q-btn
           flat
           dense
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-          style="margin-right:1rem"
         />
-          <div class="col-md-2">
-            <h5>Proyecto:</h5>
-            <q-input filled  dense="dense"  label="SIAN" label-color="green"/>
-          </div>
-          <div class="col-md-2">
-            <h5>Fecha Estatus: </h5>
-            <q-input  filled  dense="dense"  label="Fecha Status" label-color="green"/>
-          </div>
-          <div class="col-md-2">
-            <h5>Product Owner: </h5>
-            <q-input filled  dense="dense"  label="Product Owner" label-color="green"/>
-          </div>
-          <div  class="col-md-2">
-            <h5>Scrum Master: </h5>
-            <q-input filled dense="dense"  label="Scrum master" label-color="green"/>
-          </div>
-          <div  class="col-md-3 textos" >
-            <h5>Status: </h5>
-            <q-input class="float-left" filled dense="dense"  label="En proceso" label-color="green"/>
-          </div>
-        </div>
+        <q-toolbar-title class="titulo">
+          Sistema Kanban
+        </q-toolbar-title>
+      </q-toolbar>
     </q-header>
     <q-drawer
       v-model="leftDrawerOpen"
@@ -72,16 +54,29 @@
             Scrum Team
           </q-item-section>
         </q-item>
-        <q-item clickable v-ripple to="/informes">
+        <q-expansion-item
+          icon="poll"
+          label="Informes"
+        >
+          <q-item clickable v-ripple to="/informes">
           <q-item-section avatar>
-            <q-icon name="poll" />
+            <q-icon name="list_alt" />
           </q-item-section>
           <q-item-section>
-            Informes
+            Informes Proyecto
           </q-item-section>
         </q-item>
-          </q-list>
-          </q-scroll-area>
+         <q-item clickable v-ripple to="/kanban">
+          <q-item-section avatar>
+            <q-icon name="table_view" />
+          </q-item-section>
+          <q-item-section>
+            Informes Tablero Kanban
+          </q-item-section>
+        </q-item>
+       </q-expansion-item>
+      </q-list>
+    </q-scroll-area>
         <q-img
           class="absolute-top"
           src="https://cdn.quasar.dev/img/material.png"

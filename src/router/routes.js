@@ -42,6 +42,13 @@ const routes = [
       { path: '', component: () => import('pages/Informes.vue') }
     ]
   },
+  {
+    path: '/kanban',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Kanban.vue') }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

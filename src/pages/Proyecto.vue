@@ -1,29 +1,14 @@
 <template>
-  <div class="q-pa-md" style="margin-left:10%; margin-right:10%; ">
-   <div class="titulo">
-      <h4>Proyecto</h4>
-    </div>
-    <div class="tabla">
-      <table class="content-table">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Clave</th>
-            <th>Nombre</th>
-            <th>Fecha de Inicio</th>
-            <th>Fecha de Fin</th>
-          </tr>
-        </thead>
-        <tbody>
-           <tr>
-            <td>Numero</td>
-            <td>Clave</td>
-            <td>Nombre</td>
-            <td>Fecha Inicio</td>
-            <td>Fecha Fin</td>
-          </tr>
-        </tbody>
-      </table>
+  <div class="q-pa-xl" style="margin-left:10%; margin-right:10%; ">
+    <div class="q-pa-xl">
+      <q-table
+        hide-pagination
+        :data="data"
+        :columns="columns"
+        title="Proyectos"
+        row-key="name"
+      />
+       <q-btn align="between" class="btn-fixed-width q-mt-xl" color="blue-10" label="Agregar" icon="add_circle_outline" />
     </div>
   </div>
 </template>
@@ -32,6 +17,33 @@
 import '../css/estilos.css'
 
 export default {
-  name: 'PageIndex'
+  data () {
+    return {
+      columns: [
+        {
+          name: 'name',
+          required: true,
+          label: '#',
+          align: 'center',
+          field: row => row.name,
+          format: val => `${val}`,
+          sortable: true
+        },
+        { name: 'clave', align: 'center', label: 'Clave', field: 'clave', sortable: true },
+        { name: 'nombre', align: 'center', label: 'Nombre', field: 'nombre', sortable: true },
+        { name: 'tableroKanban', align: 'center', label: 'Tablero Kanban', field: 'tableroKanban' },
+        { name: 'actualizar', align: 'center', label: 'Actualizar', field: 'actualizar' }
+      ],
+      data: [
+        {
+          name: '1',
+          clave: 'sads',
+          nombre: 'SISA',
+          fat: '',
+          carbs: ''
+        }
+      ]
+    }
+  }
 }
 </script>
