@@ -7,7 +7,27 @@
         :columns="columns"
         title="Proyectos"
         row-key="name"
-      />
+      >
+      <template v-slot:body="props">
+        <q-tr :props="props">
+          <q-td
+            v-for="col in props.cols"
+            :key="col.name"
+            :props="props"
+          >
+            {{ col.value }}
+          </q-td>
+          <q-td auto-width>
+            <a href="/">
+            <q-btn align="center" class="btn-fixed-width q-mt-sm" color="blue-10"  icon-right="date_range" @click="medium = true"/>
+            </a>
+          </q-td>
+          <q-td auto-width>
+            <q-btn align="center" class="btn-fixed-width q-mt-sm" color="blue-10"  icon-right="update" @click="medium = true"/>
+          </q-td>
+        </q-tr>
+      </template>
+      </q-table>
        <q-btn align="between" class="btn-fixed-width q-mt-xl" color="blue-10" label="Agregar" icon="add_circle_outline" @click="inception = true"/>
     </div>
     <div >
@@ -102,16 +122,15 @@ export default {
         },
         { name: 'clave', align: 'center', label: 'Clave', field: 'clave', sortable: true },
         { name: 'nombre', align: 'center', label: 'Nombre', field: 'nombre', sortable: true },
-        { name: 'tableroKanban', align: 'center', label: 'Tablero Kanban', field: 'tableroKanban' },
-        { name: 'actualizar', align: 'center', label: 'Actualizar', field: 'actualizar' }
+        { label: 'Tablero kanban', align: 'center' },
+        { label: 'Actualizar', align: 'center' }
+
       ],
       data: [
         {
           name: '1',
           clave: 'sads',
-          nombre: 'SISA',
-          fat: '',
-          carbs: ''
+          nombre: 'SISA'
         }
       ]
     }
