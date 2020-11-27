@@ -22,21 +22,18 @@
                 class="q-gutter-xl"
               >
               <q-input
-                class="col-4"
                 filled
                 v-model="nombre"
                 label="Nombre del proyecto"
                 lazy-rules
               />
               <q-input
-                class="col-4"
                 filled
                 v-model="clave"
                 label="Clave del proyecto"
                 lazy-rules
               />
-
-              <q-input class="col-4" filled v-model="date" mask="date" :rules="['date']" label="Fecha Inicio">
+              <q-input  filled v-model="date" mask="date" :rules="['date']" label="Fecha Inicio">
                 <template v-slot:append>
                   <q-icon name="event" class="cursor-pointer">
                     <q-popup-proxy ref="qDateProxy" transition-show="scale" transition-hide="scale">
@@ -49,7 +46,7 @@
                   </q-icon>
                 </template>
               </q-input>
-              <q-input class="col-4" filled v-model="dateend" mask="date" :rules="['date']" label="Fecha Fin">
+              <q-input filled v-model="dateend" mask="date" :rules="['date']" label="Fecha Fin">
                 <template v-slot:append>
                   <q-icon name="event" class="cursor-pointer">
                     <q-popup-proxy ref="qDateProxy" transition-show="scale" transition-hide="scale">
@@ -62,32 +59,30 @@
                   </q-icon>
                 </template>
               </q-input>
-          </q-form>
-        </q-card-section>
-
-        <q-card-actions align="left" class="text-primary">
-          <q-btn flat label="Agregar" type="submit" @click="accept = true"/>
-          <q-btn flat label="Cerrar" v-close-popup />
-        </q-card-actions>
-      </q-card>
-    </q-dialog>
-
-  </div>
+              <div>
+              <q-btn flat label="Agregar" type="submit" v-model="accept"/>
+              <q-btn flat label="Cerrar" v-close-popup />
+              </div>
+           </q-form>
+         </q-card-section>
+        </q-card>
+      </q-dialog>
+    </div>
   </div>
 </template>
 
 <script>
 import '../css/estilos.css'
+import Notify from 'quasar'
+import Vue from 'vue'
+Vue.use(Notify)
 export default {
   data () {
     return {
       framework: {
         plugins: [
           'Notify'
-        ],
-        config: {
-          notify: { /* look at QUASARCONFOPTIONS from the API card (bottom of page) */ }
-        }
+        ]
       },
       nombre: null,
       clave: null,
@@ -123,21 +118,12 @@ export default {
   },
   methods: {
     onSubmit () {
-      if (this.accept !== true) {
-        this.$q.notify({
-          color: 'red-5',
-          textColor: 'white',
-          icon: 'warning',
-          message: 'Completa los campos'
-        })
-      } else {
-        this.$q.notify({
-          color: 'green-4',
-          textColor: 'white',
-          icon: 'cloud_done',
-          message: 'Proyecto agregado'
-        })
-      }
+      this.$q.notify({
+        color: 'green-4',
+        textColor: 'white',
+        icon: 'cloud_done',
+        message: 'Proyecto agregado'
+      })
       this.nombre = null
       this.clave = null
       this.date = null
